@@ -1,16 +1,772 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sublimado JYL - Servicio Profesional de Sublimación Textil</title>
+    <meta
+      name="description"
+      content="Expertos en sublimación en calandra, diseño y corte láser de camisetas. Personalización profesional de ropa deportiva y uniformes en Lima, Perú."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Barra de navegación fija -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <img
+            src="/logo-placeholder.png"
+            alt="Sublimado JYL Logo"
+            class="h-12 w-auto"
+          />
+          <a
+            href="https://wa.me/51987654321"
+            target="_blank"
+            class="bg-primary-violet hover:bg-primary-violet/90 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all hover:scale-105"
+          >
+            💬 Cotiza ahora
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section con Split Design -->
+    <section class="pt-20">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-8 items-center min-h-[90vh]">
+          <!-- Contenido del Hero -->
+          <div class="text-left space-y-6 fade-in">
+            <div
+              class="inline-block bg-primary-violet/10 text-primary-violet px-4 py-2 rounded-full text-sm font-semibold mb-4"
+            >
+              Servicio Profesional de Sublimación
+            </div>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+            >
+              Dale vida a tus diseños con sublimación en <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-violet to-primary-cyan"
+                >calandra profesional</span
+              >
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl">
+              Especialistas en sublimación, diseño y corte láser. Creamos tus
+              uniformes y ropa personalizada con la más alta calidad.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a
+                href="https://wa.me/51987654321"
+                target="_blank"
+                class="inline-flex items-center bg-primary-violet text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-primary-violet/90 transition-all hover:scale-105 shadow-xl shadow-primary-violet/20"
+              >
+                <span>Cotiza tu proyecto</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a
+                href="#productos"
+                class="inline-flex items-center bg-white text-gray-800 border-2 border-gray-200 px-8 py-4 rounded-full text-lg font-bold hover:border-primary-violet/20 transition-all hover:scale-105"
+              >
+                Ver catálogo
+              </a>
+            </div>
+            <!-- Beneficios Rápidos -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-8">
+              <div class="flex items-center space-x-2">
+                <div class="bg-primary-violet/10 p-2 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-violet"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold">Calidad Premium</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="bg-primary-cyan/10 p-2 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-cyan"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold">Entrega Rápida</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="bg-primary-green/10 p-2 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-green"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold">Diseños Únicos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de Imágenes -->
+          <div class="relative grid grid-cols-2 gap-4 fade-in">
+            <div class="space-y-4">
+              <div class="aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/product1.jpg"
+                  alt="Camiseta deportiva sublimada"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/product2.jpg"
+                  alt="Uniforme personalizado"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/product3.jpg"
+                  alt="Diseño exclusivo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/product4.jpg"
+                  alt="Ropa deportiva personalizada"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Categorías de Productos -->
+    <section id="productos" class="py-24 px-4 bg-white">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16 fade-in">
+          <span
+            class="text-primary-violet font-semibold text-sm uppercase tracking-wider"
+            >Nuestros Productos</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
+            Personalización para cada necesidad
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Expertos en sublimación de alta calidad para todo tipo de prendas y
+            accesorios
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Categoría: Ropa Deportiva -->
+          <div class="group fade-in">
+            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+              <img
+                src="assets/image_1.jpeg"
+                alt="Ropa Deportiva Personalizada"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              >
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">Ropa Deportiva</h3>
+                <ul class="space-y-1 text-sm">
+                  <li>• Camisetas de fútbol</li>
+                  <li>• Uniformes deportivos</li>
+                  <li>• Ropa de running</li>
+                  <li>• Sudaderas y buzos</li>
+                </ul>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/51987654321?text=Hola,%20me%20interesa%20cotizar%20ropa%20deportiva"
+              target="_blank"
+              class="inline-flex items-center text-primary-violet hover:text-primary-violet/80 font-semibold transition-colors"
+            >
+              Ver catálogo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Categoría: Ropa Casual -->
+          <div class="group fade-in">
+            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+              <img
+                src="assets/image_2.jpeg"
+                alt="Ropa Casual Personalizada"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              >
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">Ropa Casual</h3>
+                <ul class="space-y-1 text-sm">
+                  <li>• Polos y camisetas</li>
+                  <li>• Pantalones deportivos</li>
+                  <li>• Gorras y sombreros</li>
+                  <li>• Sudaderas personalizadas</li>
+                </ul>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/51987654321?text=Hola,%20me%20interesa%20cotizar%20ropa%20casual"
+              target="_blank"
+              class="inline-flex items-center text-primary-violet hover:text-primary-violet/80 font-semibold transition-colors"
+            >
+              Ver catálogo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Categoría: Accesorios -->
+          <div class="group fade-in">
+            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+              <img
+                src="assets/image_1.jpeg"
+                alt="Accesorios Personalizados"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              >
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">Accesorios</h3>
+                <ul class="space-y-1 text-sm">
+                  <li>• Bolsas y mochilas</li>
+                  <li>• Gorros y bufandas</li>
+                  <li>• Pañuelos deportivos</li>
+                  <li>• Accesorios textiles</li>
+                </ul>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/51987654321?text=Hola,%20me%20interesa%20cotizar%20accesorios"
+              target="_blank"
+              class="inline-flex items-center text-primary-violet hover:text-primary-violet/80 font-semibold transition-colors"
+            >
+              Ver catálogo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Proceso con Timeline -->
+    <section
+      class="py-24 px-4 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+    >
+      <div class="container mx-auto max-w-6xl relative">
+        <div class="text-center mb-16 fade-in">
+          <span
+            class="text-primary-violet font-semibold text-sm uppercase tracking-wider"
+            >Nuestro Proceso</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
+            Tecnología y experiencia a tu servicio
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Utilizamos equipos de última generación y técnicas avanzadas para
+            garantizar resultados excepcionales
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <!-- Timeline del Proceso -->
+          <div class="space-y-12 relative fade-in">
+            <!-- Línea vertical -->
+            <div
+              class="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary-violet via-primary-cyan to-primary-green"
+            >
+            </div>
+
+            <!-- Paso 1 -->
+            <div class="relative pl-20">
+              <div
+                class="absolute left-0 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+              >
+                <div class="text-3xl">🎨</div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                1. Diseño Personalizado
+              </h3>
+              <p class="text-gray-600">
+                Trabajamos contigo para crear o adaptar tu diseño, asegurando
+                que cada detalle cumpla con tus expectativas.
+              </p>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="relative pl-20">
+              <div
+                class="absolute left-0 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+              >
+                <div class="text-3xl">🖨️</div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                2. Sublimación en Calandra
+              </h3>
+              <p class="text-gray-600">
+                Utilizamos tecnología de sublimación de alta temperatura para
+                transferir tu diseño con colores vibrantes y duraderos.
+              </p>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="relative pl-20">
+              <div
+                class="absolute left-0 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+              >
+                <div class="text-3xl">✂️</div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                3. Corte y Confección
+              </h3>
+              <p class="text-gray-600">
+                Cortamos con precisión láser y confeccionamos tu prenda con los
+                más altos estándares de calidad.
+              </p>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="relative pl-20">
+              <div
+                class="absolute left-0 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+              >
+                <div class="text-3xl">✨</div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                4. Control de Calidad
+              </h3>
+              <p class="text-gray-600">
+                Revisamos minuciosamente cada prenda para garantizar un acabado
+                perfecto antes de la entrega.
+              </p>
+            </div>
+          </div>
+
+          <!-- Imagen del Proceso -->
+          <div class="relative fade-in">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="/proceso.jpg"
+                alt="Proceso de sublimación"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- Estadísticas flotantes -->
+            <div
+              class="absolute -left-12 top-1/4 bg-white rounded-xl shadow-xl p-4 w-40"
+            >
+              <div class="text-2xl font-bold text-primary-violet">2,000+</div>
+              <div class="text-sm text-gray-600">Prendas por mes</div>
+            </div>
+            <div
+              class="absolute -right-12 bottom-1/4 bg-white rounded-xl shadow-xl p-4 w-40"
+            >
+              <div class="text-2xl font-bold text-primary-cyan">98%</div>
+              <div class="text-sm text-gray-600">Clientes satisfechos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección CTA Final con Split Design -->
+    <section class="relative py-24 px-4 overflow-hidden bg-gray-900">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary-violet via-primary-cyan to-primary-green opacity-10"
+      >
+      </div>
+
+      <div class="container mx-auto max-w-6xl relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Contenido CTA -->
+          <div class="text-left space-y-6 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+              ¿Listo para dar vida a tus ideas?
+            </h2>
+            <p class="text-xl text-gray-300">
+              Desde uniformes deportivos hasta moda personalizada, hacemos
+              realidad tu visión con la más alta calidad en sublimación.
+            </p>
+            <div class="space-y-4 pt-4">
+              <a
+                href="https://wa.me/51987654321"
+                target="_blank"
+                class="group inline-flex items-center bg-white text-primary-violet px-8 py-4 rounded-xl text-lg font-bold hover:bg-primary-violet hover:text-white transition-all"
+              >
+                <span>Solicita tu cotización</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <p class="text-gray-400 text-sm">
+                * Atendemos pedidos personalizados para negocios y eventos
+              </p>
+            </div>
+
+            <!-- Beneficios Rápidos -->
+            <div class="grid grid-cols-2 gap-6 pt-8">
+              <div class="flex items-start space-x-3">
+                <div class="text-primary-violet">✓</div>
+                <div>
+                  <div class="font-semibold text-white">Diseños únicos</div>
+                  <p class="text-sm text-gray-400">Personalización total</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="text-primary-violet">✓</div>
+                <div>
+                  <div class="font-semibold text-white">Entrega rápida</div>
+                  <p class="text-sm text-gray-400">Tiempos óptimos</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="text-primary-violet">✓</div>
+                <div>
+                  <div class="font-semibold text-white">Alta calidad</div>
+                  <p class="text-sm text-gray-400">Materiales premium</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="text-primary-violet">✓</div>
+                <div>
+                  <div class="font-semibold text-white">Soporte 24/7</div>
+                  <p class="text-sm text-gray-400">Siempre disponibles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Galería de Imágenes -->
+          <div class="grid grid-cols-2 gap-4 fade-in">
+            <div class="space-y-4">
+              <div class="aspect-[3/4] rounded-xl overflow-hidden">
+                <img
+                  src="/gallery1.jpg"
+                  alt="Galería de productos"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-[3/4] rounded-xl overflow-hidden">
+                <img
+                  src="/gallery2.jpg"
+                  alt="Galería de productos"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="aspect-[3/4] rounded-xl overflow-hidden">
+                <img
+                  src="/gallery3.jpg"
+                  alt="Galería de productos"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-[3/4] rounded-xl overflow-hidden">
+                <img
+                  src="/gallery4.jpg"
+                  alt="Galería de productos"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section class="py-20 px-4 bg-white">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-12 fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            📍 Encuéntranos Aquí
+          </h2>
+          <p class="text-xl text-gray-600">
+            Visítanos en nuestra tienda en Lima
+          </p>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl fade-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3901.6531439902255!2d-77.01525282493859!3d-12.067369388171008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA0JzAyLjUiUyA3N8KwMDAnNDUuNiJX!5e0!3m2!1ses!2spe!4v1762056741854!5m2!1ses!2spe"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Moderno -->
+    <footer class="bg-gray-900 text-white py-16 px-4">
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <!-- Columna 1: Información de la empresa -->
+          <div class="space-y-4">
+            <h3
+              class="text-2xl font-bold bg-gradient-to-r from-primary-violet via-primary-cyan to-primary-green bg-clip-text text-transparent"
+            >
+              Sublimado JYL
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Expertos en sublimación textil y personalización de prendas.
+              Transformamos tus ideas en diseños únicos con la más alta calidad.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://wa.me/51987654321"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="WhatsApp"
+              >
+                <span class="text-2xl">💬</span>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <span class="text-2xl">📷</span>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
+                <span class="text-2xl">👍</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Productos -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Productos</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#productos" class="hover:text-white transition-colors"
+                  >Ropa Deportiva</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="hover:text-white transition-colors"
+                  >Uniformes de Fútbol</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="hover:text-white transition-colors"
+                  >Ropa Casual</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="hover:text-white transition-colors"
+                  >Accesorios</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="hover:text-white transition-colors"
+                  >Personalización</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Servicios -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Sublimación en Calandra</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Diseño Personalizado</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Corte Láser</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Confección</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Asesoría</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center space-x-2">
+                <span>📍</span>
+                <span>Lima, Perú</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>📱</span>
+                <a
+                  href="tel:+51987654321"
+                  class="hover:text-white transition-colors">+51 987 654 321</a
+                >
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>💬</span>
+                <a
+                  href="https://wa.me/51987654321"
+                  class="hover:text-white transition-colors">WhatsApp</a
+                >
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>⏰</span>
+                <span>Lun - Sáb: 9am - 6pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="border-t border-gray-800 my-8"></div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm"
+        >
+          <p>
+            © {new Date().getFullYear()} Sublimado JYL. Todos los derechos reservados.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" class="hover:text-white transition-colors"
+              >Términos y Condiciones</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script para animaciones de scroll -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll(".fade-in");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "50px",
+          }
+        );
+
+        fadeElements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
+  </body>
 </html>
