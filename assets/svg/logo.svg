@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="DIBUJO" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 958.3 300.43">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 138px;
+      }
+
+      .cls-2 {
+        fill: #0fa438;
+      }
+
+      .cls-3 {
+        fill: #891e6f;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #1d1d1b;
+        font-family: Exotic350BT-DemiBold, 'Exotc350 DmBd BT';
+        font-weight: 300;
+      }
+
+      .cls-6 {
+        fill: #043947;
+      }
+
+      .cls-7 {
+        fill: #e73d1a;
+      }
+
+      .cls-8 {
+        fill: #6d68ad;
+      }
+
+      .cls-9 {
+        fill: #f6cc00;
+      }
+
+      .cls-10 {
+        fill: #e9486d;
+      }
+
+      .cls-5 {
+        font-size: 66px;
+      }
+
+      .cls-11 {
+        font-size: 91px;
+      }
+
+      .cls-12 {
+        fill: #45b7a4;
+      }
+    </style>
+  </defs>
+  <rect class="cls-8" x="9.97" y="64.43" width="169.88" height="48.39" transform="translate(-34.87 93.07) rotate(-45)"/>
+  <rect class="cls-10" x="9.97" y="179.26" width="169.88" height="48.39" transform="translate(171.66 -7.52) rotate(45)"/>
+  <rect class="cls-9" x="125.43" y="180.32" width="169.88" height="48.39" transform="translate(-83 208.65) rotate(-45)"/>
+  <rect class="cls-12" x="126.05" y="64.43" width="169.88" height="48.39" transform="translate(124.47 -123.23) rotate(45)"/>
+  <rect class="cls-3" x="38.01" y="132.07" width="28.03" height="28.03" transform="translate(-88.06 79.58) rotate(-45)"/>
+  <rect class="cls-2" x="240.17" y="132.68" width="26.98" height="27.67" transform="translate(-29.31 222.28) rotate(-45)"/>
+  <rect class="cls-7" x="138.51" y="233.57" width="28.25" height="26.75" transform="translate(-129.91 180.26) rotate(-45)"/>
+  <rect class="cls-6" x="139.32" y="32.11" width="27.14" height="27.14" transform="translate(12.48 121.49) rotate(-45)"/>
+  <text class="cls-5" transform="translate(315.74 168.51)"><tspan x="0" y="0">SUBLIMADO</tspan></text>
+  <text class="cls-4" transform="translate(88.19 192.47)"><tspan class="cls-1" x="0" y="0">J</tspan><tspan class="cls-11" x="43.06" y="0">Y</tspan><tspan class="cls-1" x="89.36" y="0">L</tspan></text>
+</svg>
