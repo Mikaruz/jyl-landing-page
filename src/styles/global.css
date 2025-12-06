@@ -1,44 +1,56 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colores primarios */
-  --color-primary-violet-50: #f5f3ff;
-  --color-primary-violet-100: #ede9fe;
-  --color-primary-violet-200: #ddd6fe;
-  --color-primary-violet-300: #c4b5fd;
-  --color-primary-violet-400: #a78bfa;
-  --color-primary-violet-500: #8b5cf6;
-  --color-primary-violet-600: #7c3aed;
-  --color-primary-violet-700: #6d28d9;
-  --color-primary-violet-800: #5b21b6;
-  --color-primary-violet-900: #4c1d95;
+  /* Colores primarios del logo JYL */
+  --color-primary-purple-50: #f3f2f8;
+  --color-primary-purple-100: #e8e6f2;
+  --color-primary-purple-200: #d5d1e8;
+  --color-primary-purple-300: #b7b0d8;
+  --color-primary-purple-400: #948bc3;
+  --color-primary-purple-500: #6d68ad;
+  --color-primary-purple-600: #5d5898;
+  --color-primary-purple-700: #4e4a7d;
+  --color-primary-purple-800: #423f68;
+  --color-primary-purple-900: #393757;
 
-  --color-primary-cyan-50: #ecfeff;
-  --color-primary-cyan-100: #cffafe;
-  --color-primary-cyan-200: #a5f3fc;
-  --color-primary-cyan-300: #67e8f9;
-  --color-primary-cyan-400: #22d3ee;
-  --color-primary-cyan-500: #06b6d4;
-  --color-primary-cyan-600: #0891b2;
-  --color-primary-cyan-700: #0e7490;
-  --color-primary-cyan-800: #155e75;
-  --color-primary-cyan-900: #164e63;
+  --color-primary-yellow-50: #fffbeb;
+  --color-primary-yellow-100: #fef5c7;
+  --color-primary-yellow-200: #fdea8a;
+  --color-primary-yellow-300: #fcd84d;
+  --color-primary-yellow-400: #fbd026;
+  --color-primary-yellow-500: #f6cc00;
+  --color-primary-yellow-600: #d9a600;
+  --color-primary-yellow-700: #b37a02;
+  --color-primary-yellow-800: #915f08;
+  --color-primary-yellow-900: #774d0b;
 
-  --color-primary-green-50: #ecfdf5;
-  --color-primary-green-100: #d1fae5;
-  --color-primary-green-200: #a7f3d0;
-  --color-primary-green-300: #6ee7b7;
-  --color-primary-green-400: #34d399;
-  --color-primary-green-500: #10b981;
-  --color-primary-green-600: #059669;
-  --color-primary-green-700: #047857;
-  --color-primary-green-800: #065f46;
-  --color-primary-green-900: #064e3b;
+  --color-primary-pink-50: #fef2f5;
+  --color-primary-pink-100: #fde6ec;
+  --color-primary-pink-200: #fccfda;
+  --color-primary-pink-300: #f9a8bb;
+  --color-primary-pink-400: #f47796;
+  --color-primary-pink-500: #e9486d;
+  --color-primary-pink-600: #d4315a;
+  --color-primary-pink-700: #b2234a;
+  --color-primary-pink-800: #952044;
+  --color-primary-pink-900: #7f1e40;
+
+  --color-primary-teal-50: #f0faf8;
+  --color-primary-teal-100: #d9f3ef;
+  --color-primary-teal-200: #b6e5dd;
+  --color-primary-teal-300: #86d2c6;
+  --color-primary-teal-400: #5cbdad;
+  --color-primary-teal-500: #45b7a4;
+  --color-primary-teal-600: #349687;
+  --color-primary-teal-700: #2e7a6e;
+  --color-primary-teal-800: #2a6259;
+  --color-primary-teal-900: #27514b;
 
   /* Valores por defecto (equivalentes a DEFAULT) */
-  --color-primary-violet: var(--color-primary-violet-500);
-  --color-primary-cyan: var(--color-primary-cyan-500);
-  --color-primary-green: var(--color-primary-green-500);
+  --color-primary-purple: var(--color-primary-purple-500);
+  --color-primary-yellow: var(--color-primary-yellow-500);
+  --color-primary-pink: var(--color-primary-pink-500);
+  --color-primary-teal: var(--color-primary-teal-500);
 
   /* Fuente */
   --font-sans: "Poppins", sans-serif;
@@ -73,7 +85,7 @@ body {
 
 .btn-hover:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 10px 25px rgba(109, 104, 173, 0.4);
 }
 
 /* Animación de hover en tarjetas */
@@ -88,7 +100,7 @@ body {
 
 /* Gradiente animado en hero */
 .gradient-bg {
-  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #10b981 100%);
+  background: linear-gradient(135deg, #6d68ad 0%, #45b7a4 50%, #f6cc00 100%);
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
 }
@@ -128,9 +140,9 @@ body {
 @keyframes pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+    box-shadow: 0 0 0 0 rgba(109, 104, 173, 0.7);
   }
   50% {
-    box-shadow: 0 0 20px 10px rgba(139, 92, 246, 0);
+    box-shadow: 0 0 20px 10px rgba(109, 104, 173, 0);
   }
 }
