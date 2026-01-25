@@ -1,6 +1,12 @@
 ---
 import { Icon } from 'astro-iconify'
 import { WHATSAPP_LINK } from "../config.ts";
+import { Image } from 'astro:assets';
+
+import hero1 from '../../assets/images/hero_1.jpg';
+import hero3 from '../../assets/images/hero_3.jpg';
+import hero4 from '../../assets/images/hero_4.jpg';
+import womanDress from '../../assets/images/woman_dress.jpg';
 ---
 
 <section class="pt-28 md:pt-20 pb-12 md:pb-20">
@@ -78,8 +84,8 @@ import { WHATSAPP_LINK } from "../config.ts";
         <div class="grid grid-cols-3 gap-3 h-[500px]">
           <!-- Imagen grande principal (2x2) -->
           <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_1.jpg"
+            <Image
+              src={hero1}
               alt="Camiseta deportiva sublimada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -87,8 +93,8 @@ import { WHATSAPP_LINK } from "../config.ts";
 
           <!-- Imagen superior derecha -->
           <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_3.jpg"
+            <Image
+              src={hero3}
               alt="Uniforme personalizado"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -96,8 +102,8 @@ import { WHATSAPP_LINK } from "../config.ts";
 
           <!-- Imagen inferior derecha -->
           <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_4.jpg"
+            <Image
+              src={hero4}
               alt="Ropa deportiva personalizada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -109,22 +115,22 @@ import { WHATSAPP_LINK } from "../config.ts";
       <div class="relative fade-in hidden md:block lg:hidden">
         <div class="grid grid-cols-2 gap-4 auto-rows-[200px]">
           <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_1.jpg"
+            <Image
+              src={hero1}
               alt="Camiseta deportiva sublimada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div class="row-span-2 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_3.jpg"
+            <Image
+              src={hero3}
               alt="Uniforme personalizado"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_4.jpg"
+            <Image
+              src={hero4}
               alt="Ropa deportiva personalizada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -136,29 +142,29 @@ import { WHATSAPP_LINK } from "../config.ts";
       <div class="relative fade-in md:hidden">
         <div class="grid grid-cols-2 gap-3 auto-rows-[150px]">
           <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_1.jpg"
+            <Image
+              src={hero1}
               alt="Camiseta deportiva sublimada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_3.jpg"
+            <Image
+              src={hero3}
               alt="Uniforme personalizado"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="/assets/images/hero_4.jpg"
+            <Image
+              src={hero4}
               alt="Ropa deportiva personalizada"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="/assets/images/woman_dress.jpg"
+            <Image
+              src={womanDress}
               alt="Diseño exclusivo"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
