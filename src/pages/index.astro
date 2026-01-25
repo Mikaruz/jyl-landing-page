@@ -7,38 +7,86 @@ import ProductSection from "../components/ProductSection.astro";
 import CtaSection from "../components/CtaSection.astro";
 import LocationSection from "../components/LocationSection.astro";
 import Footer from "../components/Footer.astro";
+
+// Variables SEO centralizadas
+const SITE_URL = "https://jlsublimados.com";
+const OG_IMAGE = "https://ik.imagekit.io/pyrostation/WhatsApp%20Image%202026-01-24%20at%2011.45.39%20PM.jpeg?tr=w-1200,h-630,c-fill";
+const OG_IMAGE_WIDTH = "1200";
+const OG_IMAGE_HEIGHT = "630";
+const SITE_TITLE = "Sublimado JYL - Servicio Profesional de Sublimación Textil";
+const SITE_DESCRIPTION = "Expertos en sublimación en calandra, diseño y corte láser de camisetas. Personalización profesional de ropa deportiva y uniformes en Lima, Perú.";
 ---
 
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sublimado JYL - Servicio Profesional de Sublimación Textil</title>
-    <meta
-      name="description"
-      content="Expertos en sublimación en calandra, diseño y corte láser de camisetas. Personalización profesional de ropa deportiva y uniformes en Lima, Perú."
-    />
-    <link rel="canonical" href="https://jlsublimados.com" />
+    <title>{SITE_TITLE}</title>
+    <meta name="description" content={SITE_DESCRIPTION} />
+    <meta name="theme-color" content="#6b21a8" />
+    <link rel="canonical" href={SITE_URL} />
     <meta name="robots" content="index, follow" />
+    <meta name="author" content="JL Sublimados" />
+    <meta name="keywords" content="sublimación, camisetas personalizadas, uniformes, diseño textil, corte láser, Lima, Perú" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jlsublimados.com" />
-    <meta property="og:title" content="Sublimado JYL - Servicio Profesional de Sublimación Textil" />
-    <meta property="og:description" content="Expertos en sublimación en calandra, diseño y corte láser de camisetas. Personalización profesional de ropa deportiva y uniformes en Lima, Perú." />
-    <meta property="og:image" content="https://ik.imagekit.io/pyrostation/WhatsApp%20Image%202026-01-24%20at%2011.45.39%20PM.jpeg" />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:title" content={SITE_TITLE} />
+    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <meta property="og:image" content={OG_IMAGE} />
+    <meta property="og:image:width" content={OG_IMAGE_WIDTH} />
+    <meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:site_name" content="JL Sublimados" />
+    <meta property="og:locale" content="es_PE" />
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://jlsublimados.com" />
-    <meta name="twitter:title" content="Sublimado JYL - Servicio Profesional de Sublimación Textil" />
-    <meta name="twitter:description" content="Expertos en sublimación en calandra, diseño y corte láser de camisetas. Personalización profesional de ropa deportiva y uniformes en Lima, Perú." />
-    <meta name="twitter:image" content="https://ik.imagekit.io/pyrostation/WhatsApp%20Image%202026-01-24%20at%2011.45.39%20PM.jpeg" />
+    <meta name="twitter:url" content={SITE_URL} />
+    <meta name="twitter:title" content={SITE_TITLE} />
+    <meta name="twitter:description" content={SITE_DESCRIPTION} />
+    <meta name="twitter:image" content={OG_IMAGE} />
+    <meta name="twitter:creator" content="@JLSublimados" />
+
+    <!-- WhatsApp -->
+    <meta property="og:image:url" content={OG_IMAGE} />
+    <meta property="og:image:secure_url" content={OG_IMAGE} />
+
+    <!-- Preconnect y DNS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://ik.imagekit.io" />
+    <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured Data (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JL Sublimados",
+      "image": "{OG_IMAGE}",
+      "description": "{SITE_DESCRIPTION}",
+      "url": "{SITE_URL}",
+      "telephone": "+51969410653",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PE",
+        "addressLocality": "Lima"
+      },
+      "sameAs": [
+        "https://facebook.com",
+        "https://instagram.com",
+        "https://wa.me/51969410653"
+      ]
+    }
+    </script>
   </head>
 
   <body class="bg-gray-50">
