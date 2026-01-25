@@ -1,14 +1,16 @@
 ---
 import { Icon } from 'astro-iconify'
 import { WHATSAPP_LINK } from "../config.ts";
+import { Image } from 'astro:assets';
+import logo from '../../assets/svg/logo.svg';
 ---
 
 <nav id="navbar" class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-transform duration-300 ease-in-out md:translate-y-0">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-x-4">
-        <img
-          src="/assets/svg/logo.svg"
+        <Image
+          src={logo}
           alt="Sublimado JYL Logo"
           class="h-14 md:h-20 w-auto"
         />
@@ -54,4 +56,3 @@ import { WHATSAPP_LINK } from "../config.ts";
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   });
 </script>
-

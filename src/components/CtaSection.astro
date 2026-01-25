@@ -1,7 +1,13 @@
 ---
 
 import { Icon } from "astro-iconify";
-import { WHATSAPP_LINK } from "../config.ts";---
+import { WHATSAPP_LINK } from "../config.ts";
+import { Image } from 'astro:assets';
+import mochila from '../../assets/images/mochila.jpg';
+import gorras from '../../assets/images/gorras.jpg';
+import pantalones from '../../assets/images/pantalones.jpg';
+import almohada from '../../assets/images/almohada.jpg';
+---
 
 <section class="relative py-12 md:py-20 px-4 overflow-hidden bg-gray-900">
   <div
@@ -135,15 +141,15 @@ import { WHATSAPP_LINK } from "../config.ts";---
       <div class="grid grid-cols-2 gap-4 fade-in">
         <div class="space-y-4">
           <div class="aspect-[3/4] rounded-xl overflow-hidden">
-            <img
-              src="../../assets/images/mochila.jpg"
+            <Image
+              src={mochila}
               alt="Galería de productos"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-[3/4] rounded-xl overflow-hidden">
-            <img
-              src="../../assets/images/gorras.jpg"
+            <Image
+              src={gorras}
               alt="Galería de productos"
               class="w-full h-full object-cover"
             />
@@ -151,15 +157,15 @@ import { WHATSAPP_LINK } from "../config.ts";---
         </div>
         <div class="space-y-4 pt-8">
           <div class="aspect-[3/4] rounded-xl overflow-hidden">
-            <img
-              src="../../assets/images/pantalones.jpg"
+            <Image
+              src={pantalones}
               alt="Galería de productos"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-[3/4] rounded-xl overflow-hidden">
-            <img
-              src="../../assets/images/almohada.jpg"
+            <Image
+              src={almohada}
               alt="Galería de productos"
               class="w-full h-full object-cover"
             />
