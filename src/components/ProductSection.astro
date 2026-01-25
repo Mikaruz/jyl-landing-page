@@ -1,0 +1,157 @@
+---
+import { Icon } from 'astro-iconify'
+---
+
+<section
+  class="py-12 md:py-20 px-4 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+>
+  <div class="container mx-auto max-w-6xl relative">
+    <div class="text-center mb-12 md:mb-16 fade-in">
+          <span
+            class="text-primary-purple font-semibold text-xs md:text-sm uppercase tracking-wider"
+          >Nuestro Proceso</span
+          >
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mt-3 md:mt-4 mb-4 md:mb-6">
+        Tecnología y experiencia a tu servicio
+      </h2>
+      <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
+        Utilizamos equipos de última generación y técnicas avanzadas para
+        garantizar resultados excepcionales
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start md:items-center">
+      <!-- Timeline del Proceso -->
+      <div class="space-y-6 md:space-y-10 relative fade-in">
+        <!-- Línea vertical -->
+        <div
+          class="absolute left-5 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary-purple via-primary-teal to-primary-pink hidden md:block"
+        >
+        </div>
+
+        <!-- Paso 1 -->
+        <div class="relative pl-16 md:pl-24">
+          <div
+            class="absolute left-0 w-10 h-10 md:w-16 md:h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+          >
+            <Icon name="lucide:image" class="w-5 h-5 md:w-8 md:h-8 text-primary-purple"/>
+          </div>
+          <div>
+            <h3 class="text-base md:text-xl font-bold text-gray-900 mb-1 md:mb-2">
+              1. Diseño Personalizado
+            </h3>
+            <p class="text-sm md:text-base text-gray-600">
+              Trabajamos contigo para crear o adaptar tu diseño, asegurando
+              que cada detalle cumpla con tus expectativas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="relative pl-16 md:pl-24">
+          <div
+            class="absolute left-0 w-10 h-10 md:w-16 md:h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+          >
+            <Icon name="gg:check-o" class="w-5 h-5 md:w-8 md:h-8 text-primary-yellow-600"/>
+          </div>
+          <div>
+            <h3 class="text-base md:text-xl font-bold text-gray-900 mb-1 md:mb-2">
+              2. Sublimación en Calandra
+            </h3>
+            <p class="text-sm md:text-base text-gray-600">
+              Utilizamos tecnología de sublimación de alta temperatura para
+              transferir tu diseño con colores vibrantes y duraderos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="relative pl-16 md:pl-24">
+          <div
+            class="absolute left-0 w-10 h-10 md:w-16 md:h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+          >
+            <Icon name="ph:scissors-bold" class="w-5 h-5 md:w-8 md:h-8 text-primary-teal"/>
+          </div>
+          <div>
+            <h3 class="text-base md:text-xl font-bold text-gray-900 mb-1 md:mb-2">
+              3. Corte y Confección
+            </h3>
+            <p class="text-sm md:text-base text-gray-600">
+              Cortamos con precisión láser y confeccionamos tu prenda con
+              los más altos estándares de calidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="relative pl-16 md:pl-24">
+          <div
+            class="absolute left-0 w-10 h-10 md:w-16 md:h-16 bg-white rounded-full shadow-lg flex items-center justify-center"
+          >
+            <svg
+              class="w-5 h-5 md:w-8 md:h-8 text-primary-pink"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base md:text-xl font-bold text-gray-900 mb-1 md:mb-2">
+              4. Control de Calidad
+            </h3>
+            <p class="text-sm md:text-base text-gray-600">
+              Revisamos minuciosamente cada prenda para garantizar un
+              acabado perfecto antes de la entrega.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen del Proceso -->
+      <div class="relative fade-in mt-8 md:mt-0">
+        <div class="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-2xl">
+          <img
+            src="../../assets/images/woman_dress_2.jpg"
+            alt="Proceso de sublimación"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Estadísticas flotantes - Mobile -->
+        <div class="grid grid-cols-2 gap-3 md:hidden mt-4">
+          <div
+            class="bg-white rounded-lg shadow-lg p-3"
+          >
+            <div class="text-xl font-bold text-primary-purple">2,000+</div>
+            <div class="text-xs text-gray-600">Prendas por mes</div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg p-3"
+          >
+            <div class="text-xl font-bold text-primary-teal">100%</div>
+            <div class="text-xs text-gray-600">Clientes satisfechos</div>
+          </div>
+        </div>
+
+        <!-- Estadísticas flotantes - Desktop -->
+        <div
+          class="hidden md:block absolute -left-16 top-1/4 bg-white rounded-xl shadow-xl p-4 w-40"
+        >
+          <div class="text-2xl font-bold text-primary-purple">2,000+</div>
+          <div class="text-sm text-gray-600">Prendas por mes</div>
+        </div>
+        <div
+          class="hidden md:block absolute -right-16 bottom-1/4 bg-white rounded-xl shadow-xl p-4 w-40"
+        >
+          <div class="text-2xl font-bold text-primary-teal">100%</div>
+          <div class="text-sm text-gray-600">Clientes satisfechos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
