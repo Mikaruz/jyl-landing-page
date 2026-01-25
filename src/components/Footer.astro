@@ -149,8 +149,10 @@ import { WHATSAPP_LINK, WHATSAPP_NUMBER } from "../config";
               ></path>
             </svg>
             <a
-              href={`tel:${WHATSAPP_NUMBER}`}
-              class="hover:text-white transition-colors">+{WHATSAPP_NUMBER.replace(/^51/, '+51 ')}
+              href={`tel:+${WHATSAPP_NUMBER}`}
+              class="hover:text-white transition-colors"
+            >
+              {WHATSAPP_NUMBER.replace(/^51/, '+51 ')}
             </a>
           </li>
           <li class="flex items-center space-x-2">
